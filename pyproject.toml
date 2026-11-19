@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nemr-db-architect"
+version = "3.0.0"
+description = "Autonomous Relational Database Schema Designer, ESR Query Optimizer, Schema Differ, PHP 8.3 PDO Repo Generator & Seed Synthesizer"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Mahmoud ElNeMeR", email = "contact@elnemer-ai.com" }]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/ElNeMeR70/nemr-db-architect"
+Repository = "https://github.com/ElNeMeR70/nemr-db-architect"
+
+[project.scripts]
+nemr-db = "cli:main"
+
+[tool.setuptools]
+py-modules = ["cli"]
+packages = ["core"]
